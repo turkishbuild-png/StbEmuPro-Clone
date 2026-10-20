@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        title Keyboard
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=1852, user-scalable=no, target-densitydpi=device-dpi")
+        link(href="keyboard.css", rel="stylesheet", type="text/css")
+        script(src="keyboard.js")
+        script(src="numeric.js")
+        script(src="english.js")
+        script(src="russian.js")
+        script(src="ukrainian.js")
+        script(type="text/javascript").
+            if(typeof api === 'undefined')
+               document.write('<script src="api-stub.js" ></' + 'script> ');
+    body(onload="init()")
+        div#container
+            table#preview_table(style='display: none')
+                tr
+                    td(colspan=7)
+                        span#preview_window Some preview text
+                    td(colspan=3)
+                        button#switch_preview_btn Switch preview
+                    td(colspan=2)
+                        button#close_btn Close
+            table#keyboard
+                tbody
+                    each val, index in [12, 13, 12, 12, 9]
+                        tr.keyboard-row(id="row_" + index)
+                            - for (var col = 0; col < val; ++col)
+                                td.keyboard-td(id="key_td_" + index + "_" + col)
+                                    a.keyboard-key(id= "key_" + index + "_" + col, href="#", tabindex="0")
+                        - if(index == 0)
+                            tr
+                                td(colspan=13)
+                                    div.line-break
+
+            #overlay_bg
+
+            #key_menu(style='display:none')
+                table
+                    - for(var row = 0; row < 3; row++)
+                        tr
+                            - for(var col = 0; col < 3; col++)
+                                td
+                                    a.key-menu-item(id="key_menu_item_" + row + "_" + col)
+                                        - if(row == 1 && col == 1)
+                                            | OK
+
+

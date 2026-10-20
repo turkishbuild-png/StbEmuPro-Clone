@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_aspect_ratio"
+        android:title="@string/menu_aspect_ratio"
+        android:icon="@drawable/ic_aspect_ratio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_audio_lang"
+        android:title="@string/menu_audio_language"
+        android:icon="@drawable/ic_audio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_subtitle_lang"
+        android:title="@string/menu_subtitle_language"
+        android:icon="@drawable/ic_subtitles"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_player"
+        android:title="@string/menu_player"
+        android:icon="@drawable/ic_player"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_keymap"
+        android:title="@string/menu_keymap"
+        android:icon="@drawable/ic_keyboard"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_updates"
+        android:title="@string/menu_updates"
+        android:icon="@drawable/ic_update"
+        app:showAsAction="never" />
+
+</menu>

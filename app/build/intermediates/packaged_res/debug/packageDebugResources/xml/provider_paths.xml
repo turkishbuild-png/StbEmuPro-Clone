@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Externer Speicher (App-spezifisch) -->
+    <external-files-path
+        name="stbemu_files"
+        path="stbemu/" />
+    <external-files-path
+        name="stbemu_downloads"
+        path="Download/" />
+
+    <!-- Cache -->
+    <cache-path
+        name="stbemu_cache"
+        path="stbemu/" />
+
+    <!-- Interne Dateien -->
+    <files-path
+        name="stbemu_internal"
+        path="stbemu/" />
+
+    <!-- Externer Speicher (öffentlich, nur Android < 10) -->
+    <external-path
+        name="stbemu_external"
+        path="Android/data/com.mclone.stbemu/files/stbemu/" />
+
+</paths>

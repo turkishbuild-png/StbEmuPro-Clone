@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mclone.stbemu"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <permission
+        android:name="com.mclone.stbemu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.mclone.stbemu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name="com.mclone.stbemu.StbEmuApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:banner="@drawable/banner"
+        android:debuggable="true"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StbEmu"
+        android:usesCleartextTraffic="true" >
+
+        <!-- ===================== Einstiegspunkt ===================== -->
+        <activity
+            android:name="com.mclone.stbemu.ui.main.MainActivity"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:screenOrientation="landscape"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.StbEmu.Fullscreen"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mclone.stbemu.RUN_APP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- Medien-/Stream-Übergabe aus anderen Apps -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="stbemu" />
+            </intent-filter>
+        </activity>
+
+        <!-- ===================== Einstellungen ===================== -->
+        <activity
+            android:name="com.mclone.stbemu.ui.settings.SettingsActivity"
+            android:configChanges="smallestScreenSize|screenSize|orientation|keyboardHidden"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:theme="@style/Theme.StbEmu.Settings" />
+
+        <!-- Portal-Login (do_auth) -->
+        <activity
+            android:name="com.mclone.stbemu.ui.settings.StalkerLoginActivity"
+            android:exported="false"
+            android:label="@string/title_stalker_authentication"
+            android:theme="@style/Theme.StbEmu.Dialog" />
+
+        <!-- Import/Export der Einstellungen -->
+        <activity
+            android:name="com.mclone.stbemu.ui.settings.SettingsBackupActivity"
+            android:exported="false"
+            android:label="@string/title_import_export"
+            android:theme="@style/Theme.StbEmu.Settings" />
+
+        <!-- Bildschirmtastatur-Editor -->
+        <activity
+            android:name="com.mclone.stbemu.ui.keymap.KeymapListActivity"
+            android:exported="false"
+            android:label="@string/title_keymap_list"
+            android:theme="@style/Theme.StbEmu.Settings" />
+        <activity
+            android:name="com.mclone.stbemu.ui.keymap.KeymapEditorActivity"
+            android:exported="false"
+            android:label="@string/title_keymap_edit"
+            android:theme="@style/Theme.StbEmu.Settings" />
+
+        <!-- Ersteinrichtung -->
+        <activity
+            android:name="com.mclone.stbemu.ui.settings.FirstStartActivity"
+            android:exported="false"
+            android:label="@string/title_first_start"
+            android:theme="@style/Theme.StbEmu.Dialog" />
+
+        <!-- Homescreen-Shortcut anlegen -->
+        <activity
+            android:name="com.mclone.stbemu.service.ShortcutActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- ===================== Receiver & Hintergrunddienste ===================== -->
+        <receiver
+            android:name="com.mclone.stbemu.service.BootReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mclone.stbemu.service.UpdateService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.mclone.stbemu.service.TaskSchedulerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- PVR / Catch-up: Loopback-HTTP fuer den Timeshift-Stream -->
+        <service
+            android:name="com.mclone.stbemu.ui.pvr.PvrService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.mclone.stbemu.service.BackupAgent"
+            android:exported="false" />
+
+        <!-- ===================== ContentProvider ===================== -->
+        <!--
+             Bridge: WebView laedt lokale Ressourcen ueber content:// statt file://
+             (Android Nougat verbietet file:// aus fremden Origins).
+        -->
+        <provider
+            android:name="com.mclone.stbemu.service.LocalAssetProvider"
+            android:authorities="com.mclone.stbemu.localfile;com.mclone.stbemu.raw;com.mclone.stbemu.string;com.mclone.stbemu.asset"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mclone.stbemu.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="androidx.appcompat.AppCompatDelegate"
+            android:value="android:Theme.Material.NoActionBar" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.mclone.stbemu.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

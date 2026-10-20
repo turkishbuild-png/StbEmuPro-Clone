@@ -1,0 +1,19 @@
+body {
+    background: #9eadc0;
+}
+
+#main_block {
+    width: 1160px;
+    height: 660px;
+    border: 1px solid antiquewhite;
+    border-radius: 12px;
+    font-size: 30pt;
+    color: black;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.link {
+    color: blue;
+}

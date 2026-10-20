@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.mclone.stbemu.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.mclone.stbemu.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.mclone.stbemu.app-debug-4:/menu_nav_drawer.xml.flat",
+        "source": "com.mclone.stbemu.app-main-6:/menu/nav_drawer.xml"
+    },
+    {
+        "merged": "com.mclone.stbemu.app-debug-4:/xml_provider_paths.xml.flat",
+        "source": "com.mclone.stbemu.app-main-6:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.mclone.stbemu.app-debug-4:/layout_fragment_touch_control.xml.flat",
+        "source": "com.mclone.stbemu.app-main-6:/layout/fragment_touch_control.xml"
+    },
+    {
+        "merged": "com.mclone.stbemu.app-debug-4:/layout_fragment_screen_buttons.xml.flat",
+        "source": "com.mclone.stbemu.app-main-6:/layout/fragment_screen_buttons.xml"
+    },
+    {
+        "merged": "com.mclone.stbemu.app-debug-4:/menu_main_menu.xml.flat",
+        "source": "com.mclone.stbemu.app-main-6:/menu/main_menu.xml"
+    }
+]

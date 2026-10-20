@@ -1,0 +1,456 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mclone.stbemu"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-feature
+11-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:4:5-90
+12        android:name="android.hardware.touchscreen"
+12-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:4:19-62
+13        android:required="false" />
+13-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:4:63-87
+14    <uses-feature
+14-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:5:5-83
+15        android:name="android.hardware.wifi"
+15-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:5:19-55
+16        android:required="false" />
+16-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:5:56-80
+17    <uses-feature
+17-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:6:5-87
+18        android:name="android.hardware.usb.host"
+18-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:6:19-59
+19        android:required="false" />
+19-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:6:60-84
+20    <uses-feature
+20-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:7:5-92
+21        android:name="android.hardware.usb.accessory"
+21-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:7:19-64
+22        android:required="false" />
+22-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:7:65-89
+23    <uses-feature
+23-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:8:5-87
+24        android:name="android.software.leanback"
+24-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:8:19-59
+25        android:required="false" />
+25-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:8:60-84
+26
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:10:5-67
+27-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:10:22-64
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:11:5-79
+28-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:11:22-76
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:12:5-76
+29-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:12:22-73
+30    <uses-permission android:name="android.permission.WAKE_LOCK" />
+30-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:13:5-68
+30-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:13:22-65
+31    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+31-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:14:5-80
+31-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:14:22-77
+32    <uses-permission
+32-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:15:5-17:38
+33        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+33-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:16:9-65
+34        android:maxSdkVersion="29" />
+34-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:17:9-35
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:18:5-81
+35-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:18:22-78
+36    <uses-permission android:name="android.permission.VIBRATE" />
+36-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:19:5-66
+36-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:19:22-63
+37    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+37-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:20:5-76
+37-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:20:22-73
+38    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+38-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:21:5-88
+38-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:21:22-85
+39
+40    <permission
+40-->[androidx.core:core:1.13.1] /root/.gradle/caches/transforms-4/0b33984c6e46577ba0f2d2363b1f9a80/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+41        android:name="com.mclone.stbemu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.13.1] /root/.gradle/caches/transforms-4/0b33984c6e46577ba0f2d2363b1f9a80/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.13.1] /root/.gradle/caches/transforms-4/0b33984c6e46577ba0f2d2363b1f9a80/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.mclone.stbemu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.13.1] /root/.gradle/caches/transforms-4/0b33984c6e46577ba0f2d2363b1f9a80/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.13.1] /root/.gradle/caches/transforms-4/0b33984c6e46577ba0f2d2363b1f9a80/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+45
+46    <application
+46-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:23:5-169:19
+47        android:name="com.mclone.stbemu.StbEmuApplication"
+47-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:24:9-42
+48        android:allowBackup="false"
+48-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:25:9-36
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.13.1] /root/.gradle/caches/transforms-4/0b33984c6e46577ba0f2d2363b1f9a80/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+50        android:banner="@drawable/banner"
+50-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:26:9-42
+51        android:debuggable="true"
+52        android:extractNativeLibs="true"
+53        android:hardwareAccelerated="true"
+53-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:32:9-43
+54        android:icon="@drawable/logo"
+54-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:27:9-38
+55        android:label="@string/app_name"
+55-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:28:9-41
+56        android:largeHeap="true"
+56-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:29:9-33
+57        android:supportsRtl="true"
+57-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:30:9-35
+58        android:theme="@style/Theme.StbEmu"
+58-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:33:9-44
+59        android:usesCleartextTraffic="true" >
+59-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:31:9-44
+60
+61        <!-- ===================== Einstiegspunkt ===================== -->
+62        <activity
+62-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:36:9-63:20
+63            android:name="com.mclone.stbemu.ui.main.MainActivity"
+63-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:37:13-49
+64            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale"
+64-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:38:13-152
+65            android:exported="true"
+65-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:39:13-36
+66            android:launchMode="singleTask"
+66-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:40:13-44
+67            android:resizeableActivity="true"
+67-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:41:13-46
+68            android:screenOrientation="landscape"
+68-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:42:13-50
+69            android:supportsPictureInPicture="true"
+69-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:43:13-52
+70            android:theme="@style/Theme.StbEmu.Fullscreen"
+70-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:44:13-59
+71            android:windowSoftInputMode="adjustResize" >
+71-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:45:13-55
+72            <intent-filter>
+72-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:47:13-51:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:48:17-69
+73-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:48:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:49:17-77
+75-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:49:27-74
+76                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+76-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:50:17-86
+76-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:50:27-83
+77            </intent-filter>
+78            <intent-filter>
+78-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:52:13-55:29
+79                <action android:name="com.mclone.stbemu.RUN_APP" />
+79-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:53:17-68
+79-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:53:25-65
+80
+81                <category android:name="android.intent.category.DEFAULT" />
+81-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:54:17-76
+81-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:54:27-73
+82            </intent-filter>
+83            <!-- Medien-/Stream-Übergabe aus anderen Apps -->
+84            <intent-filter>
+84-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:57:13-62:29
+85                <action android:name="android.intent.action.VIEW" />
+85-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:58:17-69
+85-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:58:25-66
+86
+87                <category android:name="android.intent.category.DEFAULT" />
+87-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:54:17-76
+87-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:54:27-73
+88                <category android:name="android.intent.category.BROWSABLE" />
+88-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:60:17-78
+88-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:60:27-75
+89
+90                <data android:scheme="stbemu" />
+90-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:61:17-49
+90-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:61:23-46
+91            </intent-filter>
+92        </activity>
+93
+94        <!-- ===================== Einstellungen ===================== -->
+95        <activity
+95-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:66:9-71:60
+96            android:name="com.mclone.stbemu.ui.settings.SettingsActivity"
+96-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:67:13-57
+97            android:configChanges="smallestScreenSize|screenSize|orientation|keyboardHidden"
+97-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:68:13-93
+98            android:exported="false"
+98-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:69:13-37
+99            android:label="@string/settings_title"
+99-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:70:13-51
+100            android:theme="@style/Theme.StbEmu.Settings" />
+100-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:71:13-57
+101
+102        <!-- Portal-Login (do_auth) -->
+103        <activity
+103-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:74:9-78:58
+104            android:name="com.mclone.stbemu.ui.settings.StalkerLoginActivity"
+104-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:75:13-61
+105            android:exported="false"
+105-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:76:13-37
+106            android:label="@string/title_stalker_authentication"
+106-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:77:13-65
+107            android:theme="@style/Theme.StbEmu.Dialog" />
+107-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:78:13-55
+108
+109        <!-- Import/Export der Einstellungen -->
+110        <activity
+110-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:81:9-85:60
+111            android:name="com.mclone.stbemu.ui.settings.SettingsBackupActivity"
+111-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:82:13-63
+112            android:exported="false"
+112-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:83:13-37
+113            android:label="@string/title_import_export"
+113-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:84:13-56
+114            android:theme="@style/Theme.StbEmu.Settings" />
+114-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:85:13-57
+115
+116        <!-- Bildschirmtastatur-Editor -->
+117        <activity
+117-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:88:9-92:60
+118            android:name="com.mclone.stbemu.ui.keymap.KeymapListActivity"
+118-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:89:13-57
+119            android:exported="false"
+119-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:90:13-37
+120            android:label="@string/title_keymap_list"
+120-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:91:13-54
+121            android:theme="@style/Theme.StbEmu.Settings" />
+121-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:92:13-57
+122        <activity
+122-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:93:9-97:60
+123            android:name="com.mclone.stbemu.ui.keymap.KeymapEditorActivity"
+123-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:94:13-59
+124            android:exported="false"
+124-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:95:13-37
+125            android:label="@string/title_keymap_edit"
+125-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:96:13-54
+126            android:theme="@style/Theme.StbEmu.Settings" />
+126-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:97:13-57
+127
+128        <!-- Ersteinrichtung -->
+129        <activity
+129-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:100:9-104:58
+130            android:name="com.mclone.stbemu.ui.settings.FirstStartActivity"
+130-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:101:13-59
+131            android:exported="false"
+131-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:102:13-37
+132            android:label="@string/title_first_start"
+132-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:103:13-54
+133            android:theme="@style/Theme.StbEmu.Dialog" />
+133-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:104:13-55
+134
+135        <!-- Homescreen-Shortcut anlegen -->
+136        <activity
+136-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:107:9-112:20
+137            android:name="com.mclone.stbemu.service.ShortcutActivity"
+137-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:107:19-59
+138            android:exported="true" >
+138-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:107:60-83
+139            <intent-filter>
+139-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:108:13-111:29
+140                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+140-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:109:17-80
+140-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:109:25-77
+141
+142                <category android:name="android.intent.category.DEFAULT" />
+142-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:54:17-76
+142-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:54:27-73
+143            </intent-filter>
+144        </activity>
+145
+146        <!-- ===================== Receiver & Hintergrunddienste ===================== -->
+147        <receiver
+147-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:115:9-124:20
+148            android:name="com.mclone.stbemu.service.BootReceiver"
+148-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:116:13-49
+149            android:enabled="true"
+149-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:117:13-35
+150            android:exported="true" >
+150-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:118:13-36
+151            <intent-filter>
+151-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:119:13-123:29
+152                <action android:name="android.intent.action.BOOT_COMPLETED" />
+152-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:120:17-79
+152-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:120:25-76
+153                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+153-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:121:17-82
+153-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:121:25-79
+154                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+154-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:122:17-84
+154-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:122:25-81
+155            </intent-filter>
+156        </receiver>
+157
+158        <service
+158-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:126:9-129:40
+159            android:name="com.mclone.stbemu.service.UpdateService"
+159-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:127:13-50
+160            android:enabled="true"
+160-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:128:13-35
+161            android:exported="false" />
+161-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:129:13-37
+162        <service
+162-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:131:9-134:40
+163            android:name="com.mclone.stbemu.service.TaskSchedulerService"
+163-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:132:13-57
+164            android:enabled="true"
+164-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:133:13-35
+165            android:exported="false" />
+165-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:134:13-37
+166
+167        <!-- PVR / Catch-up: Loopback-HTTP fuer den Timeshift-Stream -->
+168        <service
+168-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:137:9-140:40
+169            android:name="com.mclone.stbemu.ui.pvr.PvrService"
+169-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:138:13-46
+170            android:enabled="true"
+170-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:139:13-35
+171            android:exported="false" />
+171-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:140:13-37
+172        <service
+172-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:142:9-144:40
+173            android:name="com.mclone.stbemu.service.BackupAgent"
+173-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:143:13-48
+174            android:exported="false" />
+174-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:144:13-37
+175
+176        <!-- ===================== ContentProvider ===================== -->
+177        <!--
+178             Bridge: WebView laedt lokale Ressourcen ueber content:// statt file://
+179             (Android Nougat verbietet file:// aus fremden Origins).
+180        -->
+181        <provider
+181-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:149:9-154:50
+182            android:name="com.mclone.stbemu.service.LocalAssetProvider"
+182-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:150:13-55
+183            android:authorities="com.mclone.stbemu.localfile;com.mclone.stbemu.raw;com.mclone.stbemu.string;com.mclone.stbemu.asset"
+183-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:151:13-133
+184            android:enabled="true"
+184-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:152:13-35
+185            android:exported="false"
+185-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:153:13-37
+186            android:grantUriPermissions="true" />
+186-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:154:13-47
+187        <provider
+187-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:156:9-164:20
+188            android:name="androidx.core.content.FileProvider"
+188-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:157:13-62
+189            android:authorities="com.mclone.stbemu.provider"
+189-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:158:13-61
+190            android:exported="false"
+190-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:159:13-37
+191            android:grantUriPermissions="true" >
+191-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:160:13-47
+192            <meta-data
+192-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:161:13-163:58
+193                android:name="android.support.FILE_PROVIDER_PATHS"
+193-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:162:17-67
+194                android:resource="@xml/provider_paths" />
+194-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:163:17-55
+195        </provider>
+196
+197        <meta-data
+197-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:166:9-168:66
+198            android:name="androidx.appcompat.AppCompatDelegate"
+198-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:167:13-64
+199            android:value="android:Theme.Material.NoActionBar" />
+199-->/mnt/sdcard/Documents/StbEmuPro-Clone/app/src/main/AndroidManifest.xml:168:13-63
+200
+201        <provider
+201-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+202            android:name="androidx.startup.InitializationProvider"
+202-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+203            android:authorities="com.mclone.stbemu.androidx-startup"
+203-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+204            android:exported="false" >
+204-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+205            <meta-data
+205-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+206                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+206-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+207                android:value="androidx.startup" />
+207-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/transforms-4/c6c718b538e58de9be2760a0cac366db/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+208            <meta-data
+208-->[androidx.lifecycle:lifecycle-process:2.8.4] /root/.gradle/caches/transforms-4/b1f4ee70c4bc0fb63c02ec869d544220/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+209                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+209-->[androidx.lifecycle:lifecycle-process:2.8.4] /root/.gradle/caches/transforms-4/b1f4ee70c4bc0fb63c02ec869d544220/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+210                android:value="androidx.startup" />
+210-->[androidx.lifecycle:lifecycle-process:2.8.4] /root/.gradle/caches/transforms-4/b1f4ee70c4bc0fb63c02ec869d544220/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+211            <meta-data
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+212                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+213                android:value="androidx.startup" />
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+214        </provider>
+215
+216        <uses-library
+216-->[androidx.window:window:1.0.0] /root/.gradle/caches/transforms-4/8638d0d94ea46cbb2c059d30f5e3418f/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+217            android:name="androidx.window.extensions"
+217-->[androidx.window:window:1.0.0] /root/.gradle/caches/transforms-4/8638d0d94ea46cbb2c059d30f5e3418f/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+218            android:required="false" />
+218-->[androidx.window:window:1.0.0] /root/.gradle/caches/transforms-4/8638d0d94ea46cbb2c059d30f5e3418f/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+219        <uses-library
+219-->[androidx.window:window:1.0.0] /root/.gradle/caches/transforms-4/8638d0d94ea46cbb2c059d30f5e3418f/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+220            android:name="androidx.window.sidecar"
+220-->[androidx.window:window:1.0.0] /root/.gradle/caches/transforms-4/8638d0d94ea46cbb2c059d30f5e3418f/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+221            android:required="false" />
+221-->[androidx.window:window:1.0.0] /root/.gradle/caches/transforms-4/8638d0d94ea46cbb2c059d30f5e3418f/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+222
+223        <service
+223-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/b6f84f8d639e9c05e21893253237f398/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+224            android:name="androidx.room.MultiInstanceInvalidationService"
+224-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/b6f84f8d639e9c05e21893253237f398/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+225            android:directBootAware="true"
+225-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/b6f84f8d639e9c05e21893253237f398/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+226            android:exported="false" />
+226-->[androidx.room:room-runtime:2.6.1] /root/.gradle/caches/transforms-4/b6f84f8d639e9c05e21893253237f398/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+227
+228        <receiver
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+229            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+230            android:directBootAware="false"
+230-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+231            android:enabled="true"
+231-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+232            android:exported="true"
+232-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+233            android:permission="android.permission.DUMP" >
+233-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+234            <intent-filter>
+234-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+235                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+235-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+235-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+236            </intent-filter>
+237            <intent-filter>
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+238                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+239            </intent-filter>
+240            <intent-filter>
+240-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+241                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+242            </intent-filter>
+243            <intent-filter>
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+244                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/transforms-4/dd17c135bc5b2739fb9964d2692ae15a/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+245            </intent-filter>
+246        </receiver>
+247    </application>
+248
+249</manifest>

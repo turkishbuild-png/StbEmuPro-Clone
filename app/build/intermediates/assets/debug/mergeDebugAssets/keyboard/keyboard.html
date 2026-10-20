@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Keyboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1852, user-scalable=no, target-densitydpi=device-dpi">
+    <link href="keyboard.css" rel="stylesheet" type="text/css">
+    <script src="keyboard.js"></script>
+    <script src="numeric.js"></script>
+    <script src="english.js"></script>
+    <script src="russian.js"></script>
+    <script src="ukrainian.js"></script>
+    <script type="text/javascript">
+      if(typeof api === 'undefined')
+         document.write('<script src="api-stub.js" ></' + 'script> ');
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="container">
+      <table id="preview_table" style="display: none">
+        <tr>
+          <td colspan="7"><span id="preview_window">Some preview text</span></td>
+          <td colspan="3">
+            <button id="switch_preview_btn">Switch preview</button>
+          </td>
+          <td colspan="2">
+            <button id="close_btn">Close</button>
+          </td>
+        </tr>
+      </table>
+      <table id="keyboard">
+        <tbody>
+          <tr id="row_0" class="keyboard-row">
+            <td id="key_td_0_0" class="keyboard-td"><a id="key_0_0" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_1" class="keyboard-td"><a id="key_0_1" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_2" class="keyboard-td"><a id="key_0_2" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_3" class="keyboard-td"><a id="key_0_3" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_4" class="keyboard-td"><a id="key_0_4" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_5" class="keyboard-td"><a id="key_0_5" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_6" class="keyboard-td"><a id="key_0_6" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_7" class="keyboard-td"><a id="key_0_7" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_8" class="keyboard-td"><a id="key_0_8" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_9" class="keyboard-td"><a id="key_0_9" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_10" class="keyboard-td"><a id="key_0_10" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_0_11" class="keyboard-td"><a id="key_0_11" href="#" tabindex="0" class="keyboard-key"></a></td>
+          </tr>
+          <tr>
+            <td colspan="13">
+              <div class="line-break"></div>
+            </td>
+          </tr>
+          <tr id="row_1" class="keyboard-row">
+            <td id="key_td_1_0" class="keyboard-td"><a id="key_1_0" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_1" class="keyboard-td"><a id="key_1_1" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_2" class="keyboard-td"><a id="key_1_2" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_3" class="keyboard-td"><a id="key_1_3" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_4" class="keyboard-td"><a id="key_1_4" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_5" class="keyboard-td"><a id="key_1_5" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_6" class="keyboard-td"><a id="key_1_6" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_7" class="keyboard-td"><a id="key_1_7" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_8" class="keyboard-td"><a id="key_1_8" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_9" class="keyboard-td"><a id="key_1_9" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_10" class="keyboard-td"><a id="key_1_10" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_11" class="keyboard-td"><a id="key_1_11" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_1_12" class="keyboard-td"><a id="key_1_12" href="#" tabindex="0" class="keyboard-key"></a></td>
+          </tr>
+          <tr id="row_2" class="keyboard-row">
+            <td id="key_td_2_0" class="keyboard-td"><a id="key_2_0" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_1" class="keyboard-td"><a id="key_2_1" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_2" class="keyboard-td"><a id="key_2_2" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_3" class="keyboard-td"><a id="key_2_3" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_4" class="keyboard-td"><a id="key_2_4" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_5" class="keyboard-td"><a id="key_2_5" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_6" class="keyboard-td"><a id="key_2_6" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_7" class="keyboard-td"><a id="key_2_7" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_8" class="keyboard-td"><a id="key_2_8" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_9" class="keyboard-td"><a id="key_2_9" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_10" class="keyboard-td"><a id="key_2_10" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_2_11" class="keyboard-td"><a id="key_2_11" href="#" tabindex="0" class="keyboard-key"></a></td>
+          </tr>
+          <tr id="row_3" class="keyboard-row">
+            <td id="key_td_3_0" class="keyboard-td"><a id="key_3_0" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_1" class="keyboard-td"><a id="key_3_1" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_2" class="keyboard-td"><a id="key_3_2" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_3" class="keyboard-td"><a id="key_3_3" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_4" class="keyboard-td"><a id="key_3_4" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_5" class="keyboard-td"><a id="key_3_5" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_6" class="keyboard-td"><a id="key_3_6" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_7" class="keyboard-td"><a id="key_3_7" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_8" class="keyboard-td"><a id="key_3_8" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_9" class="keyboard-td"><a id="key_3_9" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_10" class="keyboard-td"><a id="key_3_10" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_3_11" class="keyboard-td"><a id="key_3_11" href="#" tabindex="0" class="keyboard-key"></a></td>
+          </tr>
+          <tr id="row_4" class="keyboard-row">
+            <td id="key_td_4_0" class="keyboard-td"><a id="key_4_0" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_1" class="keyboard-td"><a id="key_4_1" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_2" class="keyboard-td"><a id="key_4_2" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_3" class="keyboard-td"><a id="key_4_3" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_4" class="keyboard-td"><a id="key_4_4" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_5" class="keyboard-td"><a id="key_4_5" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_6" class="keyboard-td"><a id="key_4_6" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_7" class="keyboard-td"><a id="key_4_7" href="#" tabindex="0" class="keyboard-key"></a></td>
+            <td id="key_td_4_8" class="keyboard-td"><a id="key_4_8" href="#" tabindex="0" class="keyboard-key"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="overlay_bg"></div>
+      <div id="key_menu" style="display:none">
+        <table>
+          <tr>
+            <td><a id="key_menu_item_0_0" class="key-menu-item"></a></td>
+            <td><a id="key_menu_item_0_1" class="key-menu-item"></a></td>
+            <td><a id="key_menu_item_0_2" class="key-menu-item"></a></td>
+          </tr>
+          <tr>
+            <td><a id="key_menu_item_1_0" class="key-menu-item"></a></td>
+            <td><a id="key_menu_item_1_1" class="key-menu-item">OK</a></td>
+            <td><a id="key_menu_item_1_2" class="key-menu-item"></a></td>
+          </tr>
+          <tr>
+            <td><a id="key_menu_item_2_0" class="key-menu-item"></a></td>
+            <td><a id="key_menu_item_2_1" class="key-menu-item"></a></td>
+            <td><a id="key_menu_item_2_2" class="key-menu-item"></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<resources>
+    <color name="colorPrimary">#1A1A2E</color>
+    <color name="colorPrimaryDark">#16213E</color>
+    <color name="colorPrimaryLight">#0F3460</color>
+    <color name="colorAccent">#E94560</color>
+    <color name="colorAccentDark">#C73659</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorBackground">#0F0F1A</color>
+    <color name="colorSurface">#1A1A2E</color>
+    <color name="colorOnSurface">#E0E0E0</color>
+    <color name="colorError">#CF6679</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- Transparent variants -->
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#CC000000</color>
+    <color name="white_overlay">#80FFFFFF</color>
+
+    <!-- Player OSD -->
+    <color name="osd_background">#CC000000</color>
+    <color name="osd_text">#FFFFFF</color>
+    <color name="osd_highlight">#E94560</color>
+</resources>

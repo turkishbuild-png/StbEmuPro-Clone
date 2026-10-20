@@ -1,0 +1,9 @@
+.number_block, .active_number_block {
+    font-size: 20px !important;
+    line-height: 31px !important;
+}
+
+.quick_ch_input {
+    font-size: 38px !important;
+    line-height: 56px !important;
+}

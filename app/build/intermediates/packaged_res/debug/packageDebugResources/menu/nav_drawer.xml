@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_portal"
+            android:title="@string/nav_portal"
+            android:icon="@drawable/ic_tv" />
+        <item
+            android:id="@+id/nav_profiles"
+            android:title="@string/nav_profiles"
+            android:icon="@drawable/ic_profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/nav_settings"
+            android:icon="@drawable/ic_settings" />
+        <item
+            android:id="@+id/nav_keymap"
+            android:title="@string/nav_keymap"
+            android:icon="@drawable/ic_keyboard" />
+        <item
+            android:id="@+id/nav_pvr"
+            android:title="@string/nav_pvr"
+            android:icon="@drawable/ic_pvr" />
+        <item
+            android:id="@+id/nav_updates"
+            android:title="@string/nav_updates"
+            android:icon="@drawable/ic_update" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/nav_about"
+            android:icon="@drawable/ic_info" />
+    </group>
+</menu>
